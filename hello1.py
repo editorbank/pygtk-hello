@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 #-*- coding: UTF-8 -*-
 
-import gtk
+# import gtk
+import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk as gtk
 
 def button_clicked(button):
     print ('Hello World!')

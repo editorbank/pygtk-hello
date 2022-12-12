@@ -11,4 +11,8 @@ python get-pip.py &&\
 pip --version &&\
 pip install pycairo &&\
 pip install PyGObject &&\
-rm get-pip.py
+rm get-pip.py &&\
+echo OK || {
+  1>&2 echo Fail
+  exit 1
+}
