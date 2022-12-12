@@ -2,5 +2,5 @@
 if [ -d venv ]
   then
     source ./venv/bin/activate
-    python -B ./hello2.py &
+    python -B ./hello3.py
 fi
